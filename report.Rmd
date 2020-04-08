@@ -1,0 +1,50 @@
+---
+title: "Untitled"
+output: html_document
+author: Nicole
+date: 08/04/2020              
+---
+
+# Title
+creat some **bold** text or _italics_.
+
+```
+a block of code
+```
+
+* bold with double asterisks
+* itialics with underscores
+* code with three backticks
+* one astericks produce a bullet point list
+
+1. can also use numbers
+2. which is a number and a full stop
+
+there is a cheat sheet which details how to add in pictures etc.
+
+## 2nd level header
+Gapminder: Australia
+
+```{r, echo = FALSE}
+library(tidyverse)
+gapminder <- read_csv("data/gapminder_data.csv")
+```
+```{r}
+Australia <- filter(gapminder, country == "Australia")
+Australia
+```
+
+### 3rd level header
+
+```{r, message = FALSE}
+ggplot(Australia, aes(x = year, y = pop)) +
+         geom_point()
+```
+
+
+3. ctrl alt i also insert code or use he green insert key above
+
+```{r, message =
+
+```
+
